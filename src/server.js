@@ -4,12 +4,12 @@ const subCatRouter = require('./routers/subCatRoutes');
 const CatRouter = require('./routers/categoryRoutes');
 const ProductRouter = require('./routers/productRoutes');
 
-const app = express()
+const app = express();
 
-app.set('view engine', 'ejs')
-app.set('views', 'src/views')
+app.set('view engine', 'ejs');
+app.set('views', 'src/views');
 app.use(express.static('public'));
-app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }));
 
 // Routes
 app.use('/category', CatRouter)
