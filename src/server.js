@@ -1,8 +1,8 @@
 const express = require('express');
 const db = require('./config/db');
-// const categoryRouter = require('./routes/categoryRoute');
-// const subCatRouter = require('./routes/subCategoryRoute');
-// const productRouter = require('./routes/productRoute');
+const subCatRouter = require('./routers/subCatRoutes');
+const CatRouter = require('./routers/categoryRoutes');
+const ProductRouter = require('./routers/productRoutes');
 
 const app = express()
 
@@ -12,9 +12,9 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }))
 
 // Routes
-// app.use('/category', categoryRouter)
-// app.use('/subcategory', subCatRouter)
-// app.use('/product', productRouter)
+app.use('/category', CatRouter)
+app.use('/subcategory', subCatRouter)
+app.use('/product', ProductRouter)
 
 app.get('/', (req, res) => {
     res.render('pages/index')

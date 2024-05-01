@@ -20,17 +20,16 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- <link href="/css/style.css" type="text/css" rel="stylesheet"> -->
+    <link href="/assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: NiceAdmin
@@ -278,30 +277,68 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link " href="index.html">
+                <a class="nav-link " href="/">
                     <i class="bi bi-grid"></i>
                     <span>Dashboard</span>
                 </a>
             </li><!-- End Dashboard Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i
+            <li class="nav-item mt-5">
+                <a class="nav-link collapsed" data-bs-target="#category-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Categotry</span><i
                         class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <ul id="category-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="tables-general.html">
-                            <i class="bi bi-circle"></i><span>General Tables</span>
+                        <a href="/category/form">
+                            <i class="bi bi-circle"></i><span>Add Category</span>
                         </a>
                     </li>
                     <li>
-                        <a href="tables-data.html">
-                            <i class="bi bi-circle"></i><span>Data Tables</span>
+                        <a href="/category">
+                            <i class="bi bi-circle"></i><span>Categories</span>
                         </a>
                     </li>
                 </ul>
-            </li><!-- End Tables Nav -->
+            </li><!-- End Category Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#subcategory-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Subcategotry</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="subcategory-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="/subcategory/form">
+                            <i class="bi bi-circle"></i><span>Add Subcategory</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/subcategory">
+                            <i class="bi bi-circle"></i><span>Subcategories</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End SubCategory Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#products-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Products</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="products-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="/product/form">
+                            <i class="bi bi-circle"></i><span>Add Product</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/product">
+                            <i class="bi bi-circle"></i><span>Products</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Category Nav -->
 
         </ul>
 
